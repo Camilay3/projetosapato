@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Stangarling</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="imgs/cinza.png">
+</head>
+<body id="body">
+    <div class="overlay">
+        <div class="loader">
+            <div class="loading"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="bola" id="bola"></div>
+        <div class="card">
+            <img class="shoes" id="shoes" src="imgs/cinza.png" alt="sapato">
+            <div class="shadow"></div>
+            <div class="card-content">
+                <p class="subtitle">Buy now</p>
+                <h3 class="title">Epic React Flyknit</h3>
+                <h4 class="price"><span>R$</span>359,00</h4>
+
+                <div class="actions-container">
+                    <div class="shoes-options">
+                        <p>Cores:</p>
+                        <div class="color-options">
+                            <div class="color" id="color1" onclick="mudarCorV()"></div>
+                            <div class="color" id="color2" onclick="mudarCorR()"></div>
+                            <div class="color" id="color3" onclick="mudarCorVA()"></div>
+                        </div>
+                        <p class="tm">Tamanhos:</p>
+                        <div class="size-options">
+                            <div class="size" onclick="t37()" id="size1">37</div>
+                            <div class="size" onclick="t38()" id="size2">38</div>
+                            <div class="size" onclick="t39()" id="size3">39</div>
+                            <div class="size" onclick="t40()" id="size4">40</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="sweetalert.js"></script>
+</html>
